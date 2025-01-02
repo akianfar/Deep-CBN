@@ -11,3 +11,15 @@ Accurate molecular property prediction is crucial for drug discovery and computa
 <img width="610" alt="image" src="https://github.com/akianfar/Deep-CBN/blob/main/assets/Artboard%202-20.jpg">
 <img width="610" alt="image" src="https://github.com/akianfar/Deep-CBN/blob/main/assets/Artboard%203-20.jpg">
 
+### Requirements 
+
+```
+numpy==1.26.4
+pandas==2.2.2
+tensorflow==2.17.1
+keras==3.5.0
+seaborn==0.13.2
+scikit-learn==1.6.0
+einops==0.8.0
+
+```
