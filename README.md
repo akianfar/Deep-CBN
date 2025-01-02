@@ -8,6 +8,6 @@ Accurate molecular property prediction is crucial for drug discovery and computa
 
 
 ## Method
-<img width="810" alt="image" src="https://github.com/akianfar/Deep-CBN/blob/main/assets/Artboard%202-20.jpg">
-<img width="810" alt="image" src="https://github.com/akianfar/Deep-CBN/blob/main/assets/2.png">
+<img width="510" alt="image" src="https://github.com/akianfar/Deep-CBN/blob/main/assets/Artboard%202-20.jpg">
+<img width="510" alt="image" src="https://github.com/akianfar/Deep-CBN/blob/main/assets/2.png">
 
