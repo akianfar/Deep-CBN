@@ -23,3 +23,18 @@ scikit-learn==1.6.0
 einops==0.8.0
 
 ```
+### Usage example
+
+To use this model, navigate to the `src` folder and locate the corresponding `.ipynb` notebook file. In the cell containing the following line:
+
+```python
+data = pd.read_csv('/content/Deep-CBN/Data/tox21.csv')
+```
+
+You can modify the dataset path to match the dataset you intend to use. Additionally, update the label column reference accordingly based on the task of your selected dataset. For example:
+
+```python
+labels = data['NR-PPAR-gamma']
+```
+
+Replace `'NR-PPAR-gamma'` with the appropriate label column name corresponding to your specific task. After making these changes, execute the code to run the model with your desired dataset and task configuration.
