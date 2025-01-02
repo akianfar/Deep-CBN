@@ -38,3 +38,5 @@ labels = data['NR-PPAR-gamma']
 ```
 
 Replace `'NR-PPAR-gamma'` with the appropriate label column name corresponding to your specific task. After making these changes, execute the code to run the model with your desired dataset and task configuration.
+If you have any questions regarding the code execution, feel free to contact:
+alikianfar0@gmail.com
