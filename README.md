@@ -1,9 +1,11 @@
 
-# Deep-CBN
-Deep-CBN: Integrating Convolutional Layers and Biformer Network with Forward-Forward and Backpropagation Training
+# Deep-CBN: Integrating Convolutional Layers and Biformer Network with Forward-Forward and Backpropagation Training
 
 ## Abstract
+<div align="justify">
 Accurate molecular property prediction is crucial for drug discovery and computational chemistry, facilitating the identification of promising compounds and accelerating therapeutic development. Traditional machine learning falters with high-dimensional data and manual feature engineering, while existing deep learning approaches may not capture complex molecular structures, leaving a research gap. We introduce Deep-CBN, a novel framework designed to enhance molecular property prediction by capturing intricate molecular representations directly from raw data, thus improving accuracy and efficiency. Our methodology combines Convolutional Neural Networks (CNNs) with a BiFormer attention mechanism, employing both the Forward-Forward algorithm and backpropagation. The model operates in three stages: (1) Feature Learning, extracting local features from SMILES strings using CNNs; (2) Attention Refinement, capturing global context with a BiFormer module enhanced by the Forward-Forward algorithm; and (3) Prediction Subnetwork Tuning, fine-tuning via backpropagation. Evaluations on benchmark datasets—including Tox21, BBBP, SIDER, ClinTox, BACE, HIV, and MUV—show that Deep-CBN achieves near-perfect ROC-AUC scores, significantly outperforming state-of-the-art methods. These findings demonstrate its effectiveness in capturing complex molecular patterns, offering a robust tool to accelerate drug discovery processes.
+</div>
+
 
 ## Method
 
