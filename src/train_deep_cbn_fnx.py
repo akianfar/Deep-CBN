@@ -69,7 +69,7 @@ def train_deep_cbn(dataset_path, target_col, smiles_col, n_epochs = 100):
     encode_smiles = Conv1D(filters=64, kernel_size=4, activation='relu', padding='valid', strides=1)(encode_smiles)  # (96,64)
     encode_smiles = Conv1D(filters=128, kernel_size=4, activation='relu', padding='valid', strides=1)(encode_smiles)  # (93,128)
     model_feature = Model(inputs=XDinput, outputs=encode_smiles, name='model_feature')
-    model_feature.summary()
+    #model_feature.summary()
 
 
     # Prediction model definition
@@ -83,7 +83,7 @@ def train_deep_cbn(dataset_path, target_col, smiles_col, n_epochs = 100):
     FC5 = Dense(64, activation='relu')(FC4)
     predictions = Dense(2, activation='softmax')(FC5)
     model_pred = Model(inputs=input_extracted_feature, outputs=predictions)
-    model_pred.summary()
+    #model_pred.summary()
 
     # Full model definition with added Pooling layer
     interaction_input = XDinput
@@ -93,7 +93,7 @@ def train_deep_cbn(dataset_path, target_col, smiles_col, n_epochs = 100):
     # Adding Pooling layer to reduce dimensionality
     pooled_output = GlobalAveragePooling1D()(predicted_output) # Output: (None, 2)
     interactionModel = Model(inputs=interaction_input, outputs=pooled_output, name='interactionModel')
-    interactionModel.summary()
+    #interactionModel.summary()
 
     ### BiFormer Block ###
     class DropPath(layers.Layer):
@@ -360,7 +360,7 @@ def train_deep_cbn(dataset_path, target_col, smiles_col, n_epochs = 100):
 
     # Define the complete model
     model_phaz2 = Model(inputs=input_phaz2, outputs=condition_2)
-    model_phaz2.summary()
+    #model_phaz2.summary()
 
     ### Phase 3 ####
     # Define new transformer blocks
@@ -411,7 +411,7 @@ def train_deep_cbn(dataset_path, target_col, smiles_col, n_epochs = 100):
     model_phaz3 = Model(inputs=XDinput_phaz3, outputs=predictions_phaz3)
 
     # Model summary
-    model_phaz3.summary()
+    #model_phaz3.summary()
     
     # Metrics for binary classification tasks
     METRICS_BINARY = [
